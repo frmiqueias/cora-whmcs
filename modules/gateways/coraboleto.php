@@ -34,7 +34,7 @@ function coraboleto_link($params)
 function coraHtmlForm($params)
 {
 	$html = '<form action="' . CORA_URL_ACTION . '" method="post" target="_BLANK">';
-	$html .= '<input type="hidden" name="return_url" value="' . $params['systemurl'] . '/modules/gateways/callback/' . $params['paymentmethod'] . '.php'  . '">';
+	$html .= '<input type="hidden" name="return_url" value="' . $params['systemurl'] . 'modules/gateways/callback/' . $params['paymentmethod'] . '.php'  . '">';
 	$html .= '<input type="hidden" name="license_key" value="' . $params['cora_license_key']  . '">';
 	$html .= '<input type="hidden" name="name" value="' . $params['clientdetails']['firstname'] . ' ' . $params['clientdetails']['lastname'] . '">';
 	$html .= '<input type="hidden" name="email" value="' . $params['clientdetails']['email'] . '">';
